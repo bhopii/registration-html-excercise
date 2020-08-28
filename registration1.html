@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+    
+<style>
+    body {
+  font-family: Arial, Helvetica, sans-serif;
+  border-image-width: 10px;
+
+}
+</style>
+    <head>
+        <title>Registration form</title>
+    </head>
+
+    <body>
+        RegForm 
+        <form>
+            <table>
+                <tr>
+                    <td>
+                      <label for="fname">First name:</label>
+                    </td>
+                    <td>
+                      <input type="text" id="fname" name="fname"><br><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="pass">Password:</label>
+                    </td>
+                    <td>
+                    <input type="password" id="pass" name="password"
+                        minlength="8" required>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="email">Email:</label>
+                    </td>
+                    <td>
+                    <input type="email" id="email"
+                        pattern=".+@globex.com" size="30" required>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label for="date">Date: </label></td>
+                    <td>  <input type="date" name="date" id="date"></td>
+                </tr>
+
+                <tr>
+                    <td><label for="fname">Phone No:</label></td> 
+                    <td><input type="text" id="fname" name="fname"><br><br></td> 
+                </tr>
+
+
+                <tr>
+                    <td>Gender : </td>
+                    <td><input type="radio" name="gender" value="male"> Male</td>
+                    <td><input type="radio" name="gender" value="female"> Female</td>
+                    <td><input type="radio" name="gender" value="other"> Other</td>
+                </tr>
+
+                <tr>
+                    <td> Langauge :</td>
+
+                
+                        <td>  <input type="checkbox" id="scales" name="scales"
+                                checked>
+                            <label for="scales">Hindi</label></td>
+                    
+                        <td><input type="checkbox" id="horns" name="horns">
+                            <label for="horns">English</label></td>
+                </tr>
+            
+            <tr>
+                <td>
+                 <label for="course-select">Choose a Course:</label>
+                </td>
+                <td>
+                    <select id="Course">
+                            <option value="">--Please choose an option--</option>
+                            <option value="B.A">BA</option>
+                            <option value="B.C.A">BCA</option>
+                            <option value="Science">Science</option>
+                            <option value="Commerce">Commerce</option>
+                    </select>
+                </td>
+            </tr>           
+       <tr>
+          <td>Comments :</td>
+          <td> <textarea rows="4" cols="30" name="comment" form="usrform"></textarea></td>
+       </tr>
+
+       <tr>
+           <td>
+       <input type="submit">
+       <input type="reset">
+            </td>
+       </tr>
+       </table>
+        </form>
+    </body>
+
+</html>
